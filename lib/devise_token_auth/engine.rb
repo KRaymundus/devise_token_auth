@@ -33,8 +33,8 @@ module DeviseTokenAuth
   self.redirect_whitelist                   = nil
   self.check_current_password_before_update = false
   self.enable_standard_devise_support       = false
-  self.add_mongoid_support                  = false
-  self.use_only_mongoid                     = false
+  self.add_mongoid_support                  = true
+  self.use_only_mongoid                     = true
   self.remove_tokens_after_password_reset   = false
 
   def self.setup(&block)
